@@ -11,7 +11,7 @@ data <- data.frame(year, sales)
 linear_model <- lm(sales ~ year,
                    data=data)
 
-summary(linear.model)
+summary(linear_model)
 
 plot(year, sales,
      type="o",
@@ -19,7 +19,7 @@ plot(year, sales,
      xlab="Year",
      ylab="Sales")
 
-abline(linear.model)
+abline(linear_model)
 
 # Quadratic trend
 quad_model <- lm(sales ~ year + I(year^2),
